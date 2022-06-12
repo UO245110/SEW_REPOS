@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+		 <!-- Datos que describen el documento -->
+		 <meta charset="UTF-8">
+		 <!-- Metadatos pedidos en el ejercicio 3 -->
+		 <meta name="keywords" content="Magic, The, Gathering">
+		 <meta name="author" content="Xurde Mares Omar">
+		 <meta name="viewport" content="width=device-width, initial scale=1.0">
+		 <title>
+			Uniovi the Gathering - Ofertas
+		 </title>
+		 <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+		 <link rel="stylesheet" type="text/css" href="estilos/tabla.css">
+		 <link rel="stylesheet" type="text/css" href="estilos/layout.css">
+	</head>
+	
+	<body>
+		<header>
+		<h1> Menú navegación - UtG </h1>
+			
+			 <nav>
+				  <a title="Página inicial de Uniovi the Gathering." href="index.html">Inicio</a>
+				  <a title="Historia sobre Magic the Gathering." href="historia.html">Historia</a>
+				  <a title="Mapa de tiendas de MtG." href="mapa.html">Mapa</a>
+				  <a title="Colección de mazos de MtG" href="mazos.html">Mazos</a>
+				  <a title="Ofertas de mazos de MtG" href="ofertas.php">Ofertas</a>
+				  <a title="Contacto sobre UtG" href="contacto.html">Contacto</a>
+				  <a title="Gadgets de UtG" href="gadgets.html">Gadgets</a>
+			</nav>
+		</header>
+		
+		<main>
+		
+			 <section>
+							<h2> Espacio de compras UtG</h2>
+							<p> Esta zona de la página web está destinada para que todo usuario pueda ver las ofertas de las cartas
+							actuales en el sistema y algunos comentarios de nuestros usuarios respecto a estas. </p>
+							<p> De momento el sistema está cerrado y solo está disponible para determinados usuarios y unas cartas 
+							específicas, pero estamos seguros de que a pesar de estar en un estado tan inicial podrás aprovecharlo. </p>
+						   </section><h2> Ofertas de cartas en UtG </h2><p> La siguiente tabla muestra cada una de las ofertas que constan en el sistema, de momento el 
+					número de unidades es ilimitadas. Pero por favor tenga cuidado con comprobar que la calidade de la carta se 
+					adapte a sus necesidades.</p><table>
+							<tbody><tr> <th> Carta </th> <th> Precio </th> <th> Calidad </th> <th> Código Carta </th> </tr>
+										<tr>
+											<td> Gran maestro de flores </td> 
+											<td> 10€ </td> 
+											<td> GOOD </td>  
+											<td> 1 </td>  
+											</tr> 
+										<tr>
+											<td> Lolth la reina de arañas </td> 
+											<td> 5€ </td> 
+											<td> BAD </td>  
+											<td> 3 </td>  
+											</tr> 
+										<tr>
+											<td> Zariel archiduque del averno </td> 
+											<td> 100€ </td> 
+											<td> VERY GOOD </td>  
+											<td> 4 </td>  
+											</tr> </tbody></table> <br><h2> Comentarios de los usuarios de UtG</h2><p> Los siguientes comentarios han sido realizados por parte de algunos usuarios del sistema. Los comentarios
+					no se pueden modificar ni volver a realizar tras haberlo añadido a la página web.</p><table>
+							<tbody><tr> <th> Nombre </th> <th> Comentario </th> <th> Código Carta </th> </tr>
+										<tr>
+											<td>Beatriz</td> <td>Hola</td> <td>1</td> </tr>
+										<tr>
+											<td>Beatriz</td> <td>Este comentario estará bien??</td> <td>2</td> </tr>
+										<tr>
+											<td>Beatriz</td> <td>Me encantan los insectos, fue ver la carta y querer comprarla.</td> <td>3</td> </tr>
+										<tr>
+											<td>Lucía</td> <td>¿Funcionará?</td> <td>2</td> </tr>
+										<tr>
+											<td>Lucía</td> <td>Ni me van ni me vienen los insectos, el diseño de la reina me gusta. Espero que saquen otra araña en la nueva colección.</td> <td>3</td> </tr>
+										<tr>
+											<td>Lucía</td> <td>Comentario</td> <td>4</td> </tr>
+										<tr>
+											<td>Xurde</td> <td>Buena carta para mazos agresivos.</td> <td>1</td> </tr>
+										<tr>
+											<td>Xurde</td> <td>La tengo y no me parece la gran cosa.</td> <td>2</td> </tr>
+										<tr>
+											<td>Xurde</td> <td>No me gusta nada que haya cartas relacionadas con arañas. Me dan miedito.</td> <td>3</td> </tr>
+										<tr>
+											<td>Xurde</td> <td>buena carta</td> <td>4</td> </tr></tbody></table> <br><h2> Añade tu propio comentario</h2><form method="post" name="form"><p> Seleccione la identidad de la persona con la que quiere realizar el comentario: </p><label for="selectedUser">Usuario seleccionado:</label><select id="selectedUser" name="selectedUser"><option value="1">Xurde</option><option value="2">Beatriz</option><option value="3">Lucía</option></select><p> Seleccione la carta que quiera comentar y que no haya sido comentada anteriormente por el usuario escogido. </p><label for="selectedCard">Carta seleccionada:</label><select id="selectedCard" name="selectedCard"><option value="1">Gran maestro de flores</option><option value="2">Mordenkainen</option><option value="3">Lolth la reina de arañas</option><option value="4">Zariel archiduque del averno</option></select> <br><p> A continuación introduzca su comentario, intente ser breve.</p><label for="comentario">Mensaje a comentar:</label><textarea id="comentario" name="comentario" required=""></textarea> <br><input name="insertarComentario" type="submit" value="Enviar"></form>			
+		</main>
+		
+		<footer>
+			<p> Esta página web es el proyecto de la asignatura de Software Y Estándares Web 2021/2022</p>
+				<img src="multimedia/Escudo_UO.png" alt="Logo de UniOvi">
+				<img src="multimedia/HTML5.png" alt="HTML5 válido!">
+				<img src="multimedia/CSS3.png" alt="CSS3 válido!">
+		</footer>	
+	
+
+</body></html>

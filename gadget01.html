@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+		 <!-- Datos que describen el documento -->
+		 <meta charset="UTF-8">
+		 <!-- Metadatos pedidos en el ejercicio 3 -->
+		 <meta name="keywords" content="Magic, The, Gathering">
+		 <meta name="author" content="Xurde Mares Omar">
+		 <meta name="viewport" content="width=device-width, initial scale=1.0">
+		 <title>
+			Uniovi the Gathering - Mazos
+		 </title>
+		 <link rel="stylesheet" type="text/css" href="estilos/layout.css">
+		 <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+		  <!--Include jQuery-->
+		 <script defer="" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <script defer="" src="evaluadorCarta.js"></script>
+		 <script defer="" src="conversor.js"></script>
+	</head>
+	
+	<body onload="aConversor.cargarDatos()">
+		<header>
+		<h1> Zona de Gadgets - UtG </h1>
+			<nav>
+				  <a title="Página inicial de Uniovi the Gathering." href="index.html">Inicio</a>
+				  <a title="Historia sobre Magic the Gathering." href="historia.html">Historia</a>
+				  <a title="Mapa de tiendas de MtG." href="mapa.html">Mapa</a>
+				  <a title="Colección de mazos de MtG" href="mazos.html">Mazos</a>
+				  <a title="Ofertas de mazos de MtG" href="ofertas.php">Ofertas</a>
+				  <a title="Contacto sobre UtG" href="contacto.html">Contacto</a>
+				  <a title="Gadgets de UtG" href="gadgets.html">Gadgets</a>
+			</nav>
+		</header>
+		
+		<main>
+			
+			<section>
+			<h2> Funcionalidad adicional de UtG</h2>
+				<p> Para realizar una oferta de carta en UtG es muy importante conocer algunos parámetros de la carta 
+				que se desea vender. Por eso en esta sección hemos añadido algunas herramientas útiles para subsanar cualquier
+				 dificultad que aparezca. 
+				</p>
+				<p> De momento el sistema solo cuenta con dos funcionalidades.
+				</p><ul>
+					<li>Conversor de Dolares a Euros. (Para nuestros usuarios de fuera de Europa)</li>
+					<li>Calculadora de calidad de carta. (Se sugiere que se contraste con la opinión de un profesional)</li>
+				</ul>
+			</section>
+
+			<section>
+						
+			<h2> Conversor de Dolares a Euros</h2>
+				<p>Introduzca el valor de su carta en dolares. (En caso de tener decimales separar con punto)</p>
+				<label for="valorOriginal">Valor original en euros:</label>
+				<textarea title="valorOriginal" id="valorOriginal">0</textarea>
+				<br>
+				<label for="valorCalculado">Valor convertido en dolares:</label>
+				<textarea title="valorCalculado" id="valorCalculado" disabled=""></textarea>
+				<br>
+				<p>Cuando se haya asegurado que el valor sea el correcto, clique el botón y aparecerá el precio convertido en
+					el espacio vacío derecho.</p>
+				<input type="button" value="Realizar cálculo" onclick="aConversor.aEuros()">
+			</section>
+			
+		
+			<section>
+				<h2> Calculadora de calidad</h2>
+				<label for="iCarta">Seleccione la imagen de su carta para calcular su estado clicando el botón:</label>
+				<input id="iCarta" type="file" name="iCarta" onchange="evaluador.evaluarCarta()">
+				<p id="calidadCarta">La calidad de: portada9.png es: PERFECT</p>
+			</section>
+		</main>
+			
+		<footer>
+			<p> Esta página web es el proyecto de la asignatura de Software Y Estándares Web 2021/2022</p>
+				<img src="multimedia/Escudo_UO.png" alt="Logo de UniOvi" title="Logo de la Universidad de Oviedo">
+				<img src="multimedia/HTML5.png" alt="HTML5 válido!" title="Logo de validez de HTML5">
+				<img src="multimedia/CSS3.png" alt="CSS3 válido!" title="Logo de validez de CSS3">
+		</footer>
+	
+
+</body></html>

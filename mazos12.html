@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+		 <!-- Datos que describen el documento -->
+		 <meta charset="UTF-8">
+		 <!-- Metadatos pedidos en el ejercicio 3 -->
+		 <meta name="keywords" content="Magic, The, Gathering">
+		 <meta name="author" content="Xurde Mares Omar">
+		 <meta name="viewport" content="width=device-width, initial scale=1.0">
+		 <title>
+			Uniovi the Gathering - Mazos
+		 </title>
+		 <link rel="stylesheet" type="text/css" href="estilos/layout.css">
+		 <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+		  <!--Include jQuery-->
+		 <script defer="" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <script defer="" src="mazos.js"></script>
+	</head>
+	
+	<body onload="aLoader.cargarDatos()">
+		<header>
+		<h1> Zona de Mazos - UtG </h1>
+			<nav>
+				  <a title="Página inicial de Uniovi the Gathering." href="index.html">Inicio</a>
+				  <a title="Historia sobre Magic the Gathering." href="historia.html">Historia</a>
+				  <a title="Mapa de tiendas de MtG." href="mapa.html">Mapa</a>
+				  <a title="Colección de mazos de MtG" href="mazos.html">Mazos</a>
+				  <a title="Ofertas de mazos de MtG" href="ofertas.php">Ofertas</a>
+				  <a title="Contacto sobre UtG" href="contacto.html">Contacto</a>
+				  <a title="Gadgets de UtG" href="gadgets.html">Gadgets</a>
+			</nav>
+		</header>
+		
+		<main><button onclick="aLoader.colecciones[0].iteraSet()">Avanzar a la siguiente expansión</button><p>Acualmente está viendo la expansión 2 de las 2 posibles.</p><p>Nombre de la expansión: Kamigawa: La dinastía del Neon. Código de la expansión: NEC.</p><p>Temática de la expansión: Set inspirado en la dinastía japonesa siguiendo una temática futurística.</p><p>Lanzamiento de la expansión: 2022-02-18. Final de lanzamiento de la expansión: 2024-06-23.</p><img src="multimedia/NEC1.png" alt="Imagen número 0 del set: Kamigawa: La dinastía del Neon" title="Imagen promocional del set Kamigawa: La dinastía del Neon"><img src="multimedia/NEC2.png" alt="Imagen número 1 del set: Kamigawa: La dinastía del Neon" title="Imagen promocional del set Kamigawa: La dinastía del Neon"><button onclick="aLoader.colecciones[0].iteraArquetipo()">Avanzar a la siguiente baraja</button><p>Acualmente está viendo la baraja 1 de las 2 posibles de la expansión seleccionada.</p><p>Nombre del arquetipo: ¡Armándose!</p><p>Color del arquetipo: Azul.</p><p>Estilo de juego del mazo: Uso de la mecánica propia del set de vehículos y gran robo de cartas.</p><p>Lista de rivales favorables: </p><ul><li>Mazos de juego tardío.</li><li>Mazos de color verde.</li></ul><p>Lista de rivales desfavorables: </p><ul><li>Mazos de tempo.</li><li>Mazos de color azul.</li></ul><p>Remplazos de la carta: Kotori, pilota prodigio.</p><ul><li>Linvala, el escudo del mar.</li><li>Profesor de combate.</li></ul><p>Remplazos de la carta: Jace, arquitecto de pensamientos.</p><ul><li>Jace, el escultor de mentes.</li><li>Ashiok, la musa de las pesadillas.</li></ul></main>
+			
+		<footer>
+			<p> Esta página web es el proyecto de la asignatura de Software Y Estándares Web 2021/2022</p>
+				<img src="multimedia/Escudo_UO.png" alt="Logo de UniOvi" title="Logo de la Universidad de Oviedo">
+				<img src="multimedia/HTML5.png" alt="HTML5 válido!" title="Logo de validez de HTML5">
+				<img src="multimedia/CSS3.png" alt="CSS3 válido!" title="Logo de validez de CSS3">
+		</footer>	
+	
+
+</body></html>
